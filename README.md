@@ -25,4 +25,4 @@ The code is split up to address different parts of the problem.
 - `weatherService.ts`: Handles external API communication and converts data into required format.
 - `types.ts`: Defines an interface for consistency. 
 
-
+Note: The markdown document was formatted by an LLM.
