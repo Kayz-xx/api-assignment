@@ -6,6 +6,7 @@ export const getTempByZip = async (
   scale: Scale = "Fahrenheit",
 ): Promise<WeatherResponse> => {
   const apiKey = process.env.WEATHER_API_KEY;
+  // use native zip call
   const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${zip}`;
 
   try {
@@ -20,7 +21,7 @@ export const getTempByZip = async (
   } catch (error) {
     if (axios.isAxiosError(error)) {
       throw new Error(
-        `Weather API error: ${error.response?.status} - ${error.response?.data?.error?.message ?? "Unknown error"}`,
+        `weatherAPI error: ${error.response?.status} - ${error.response?.data?.error?.message ?? "Unknown error"}`,
       );
     }
     throw new Error("An unexpected error occurred");
