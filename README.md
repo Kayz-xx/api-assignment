@@ -27,7 +27,7 @@ Initially, I intended use express.js + typescript boilerplate but decided agains
 The code is split up to address different parts of the problem.
 
 - `index.ts`: Manages the main API route, providing JSON responses.
-- `weatherService.ts`: Handles external API communication and converts data into required format.
+- `weather.ts`: Handles external API communication and converts data into required format.
 - `types.ts`: Defines an interface for consistency.
 - `index.test.ts`: Verifies responses using an automated test suite.
 
